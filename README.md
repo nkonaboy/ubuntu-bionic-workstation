@@ -26,6 +26,4 @@ Docker binary download URL:
 https://docs.docker.com/install/linux/docker-ce/binaries/
 
 # TODO 
-- Less hacky way of adding user
-- Instructions for Windows SSH (cmd) client and public/private key setup
-- Make readme.md less crappy
+TODOs moved to 'Issues'
