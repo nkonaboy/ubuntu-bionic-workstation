@@ -1,0 +1,15 @@
+version: '3.6'
+services:
+  bionic:
+    build: .
+    privileged: true
+    container_name: ws
+    hostname: galileo
+    ports:
+     - "2222:22"
+    volumes:
+      - "home:/home"
+      - d:\\:/mnt/d
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+volume
