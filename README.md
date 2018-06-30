@@ -1,4 +1,6 @@
 # DockerizedUbuntuWS
+Made into repo from this Gist https://gist.github.com/sdkks/c505874bbf667f7ba79843d55ef3ba9a
+
 Objective of this project is to provide `docker`ized Ubuntu (headless) Workstation for development/operations on Windows
 
 # HOW TO
