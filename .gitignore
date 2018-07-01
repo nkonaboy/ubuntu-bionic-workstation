@@ -1,2 +1,3 @@
 apt.d/*
 !apt.d/main.list
+docker.compose.yml

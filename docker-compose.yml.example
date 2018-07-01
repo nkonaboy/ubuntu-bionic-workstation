@@ -1,0 +1,23 @@
+# Replace <> with your own values
+version: '3.6'
+services:
+  bionic:
+    build: .
+    privileged: true
+    container_name: <Your Container Name>
+    hostname: <Hostname you want to see in terminal>
+    ports:
+     - <Local port to forward to SSHD. Example, "2222:22">
+    volumes:
+      # Create a persistent volume in docker with `docker volume create <VOLNAME>`
+      - < Docker volume to mount. Example, mount VOLNAME to /home "<VOLNAME>:/home" >
+      - < Mount your local Windows disk. Example, mount D drive to /mnt/d, "d:\\:/mnt/d" >
+      # This is for mounting Hyper-V HyperKit Docker VM socket to this container
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+volumes:
+  # Volume created previously for persistent storage
+  <VOLNAME>:
+
+# See for example docker-compose.yml on a Windows 10 Host.
+# https://github.com/sdkks/DockerizedUbuntuWS/blob/2def75d8a39642808a31c04b51f9d4778aa446d5/docker-compose.yml
