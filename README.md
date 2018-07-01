@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sdkks/DockerizedUbuntuWS.svg?branch=master)](https://travis-ci.org/sdkks/DockerizedUbuntuWS)
+
 # DockerizedUbuntuWS
 Made into repo from this Gist https://gist.github.com/sdkks/c505874bbf667f7ba79843d55ef3ba9a
 
