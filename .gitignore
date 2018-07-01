@@ -1,0 +1,2 @@
+apt.d/*
+!apt.d/main.list
