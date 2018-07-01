@@ -4,7 +4,7 @@ services:
   - docker
 before_install:
   - docker build . -t bionic_ws
-  - apt-get update && apt-get install -y sshpass
+  - sudo apt-get update && sudo apt-get install -y sshpass
 script:
   - docker run --rm -d -p 22:22 bionic_ws
   - sshpass -pdummyPassword ssh -o StrictHostKeyChecking=no ubuntu@localhost echo no-op
