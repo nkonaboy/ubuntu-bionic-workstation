@@ -4,6 +4,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 # Main packages from apt.d
+# If you need to install additional packages, create apt.d/<yourPackageList>.list
+# Doing so will ignore it from VCS but it will be installed
 ADD apt.d /tmp/apt.d
 RUN bash -c 'set -xeuo pipefail && apt-get install -y $(cat /tmp/apt.d/*.list)'
 
